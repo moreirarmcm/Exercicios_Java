@@ -34,7 +34,8 @@ public class Filme {
 		Scanner sc = new Scanner(System.in);
 		filmes = new ArrayList<Filme>();
 		int novo_filme = 0;
-		// Recebe os filmes.
+		//Recebe os filmes
+		/*
 		do {
 			System.out.println("Digite o nome do próximo filme: ");
 			String name = sc.nextLine();
@@ -49,11 +50,22 @@ public class Filme {
 			System.out.println("Deseja inserir um novo filme?\n <1 para 'SIM'    0 para 'NÃO'> ");
 			novo_filme = Integer.parseInt(sc.nextLine());
 		} while (novo_filme == 1);
-
+		*/
+		filmes.add(new Filme("Alien vs. Predador", 2.3f));
+		filmes.add(new Filme("Batman: The Dark Knight", 1.5f));
+		filmes.add(new Filme("Winx", 2.6f));
+		filmes.add(new Filme("Vingadores", 2.1f));
+		filmes.add(new Filme("Beleza Oculta", 1.7f));
+		filmes.add(new Filme("Top Gun: Maverick", 2.8f));
+		filmes.add(new Filme("O Curioso caso de Benjamin Button", 3.1f));
+		filmes.add(new Filme("O Ilusionista", 1.7f));
+		filmes.add(new Filme("Pantera Negra", 2.4f));
+		filmes.add(new Filme("Avatar", 3.15f));
+		
 		filmes.sort(Comparator.comparing(f -> f.getDuracao()));
 		System.out.println("Quantas horas diárias você tem disponível para assistir filmes?");
 		float tempo_diario = sc.nextFloat();
-		int x = QuantosDias(tempo_diario);
+		System.out.println("Você conseguirá assistir todos os filmes em " + QuantosDias(tempo_diario) + " dias.");
 	}
 
 	public static int QuantosDias(float tempo_diario) {
