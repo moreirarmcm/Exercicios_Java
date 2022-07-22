@@ -4,7 +4,5 @@
  * mesmo dia que começou. A lista L de filmes é composta pelo nome e tempo de cada
  * filme, em float. O tamanho de L é definido pelo próprio Fulano.
  * 
- * Resolução fornecida: ordenar a lista L pelo método Bubble Sort e depois somar
- * valores da extremidade do list até 'soma > t'.
  * 
  * @author Renan Moreira
